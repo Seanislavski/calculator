@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First jQuery App Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+    <header>
+        <h1>Sean's jQuery Test Page</h1>
+        <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="maincontent">
+            <h1>Timer</h1>
+            <div class="clock">
+            <h1 id="nums">00:00</h1>
+            </div>
+            <form id="langoSwap" onchange="checkRadio()">
+                <h3 id="languageTarget">Choose a language</h3>
+                <span class="swaps">
+                    <input type="radio" name="lang" id="sp">Spanish
+                    <input type="radio" name="lang" id="en">English
+                    <input type="radio" name="lang" id="de">German
+                </span>
+            </form>
+            <p>
+            <div class="calculator">
+                <span class="calc" id="display">0</span>
+
+                <span class="calc buttons" onclick="calcNum()" id="one">1</span>
+                <span class="calc buttons" onclick="calcNum()" id="two">2</span>
+                <span class="calc buttons" onclick="calcNum()" id="three">3</span>
+                <span class="calc buttons" onclick="calcNum()" id="four">4</span>
+                <span class="calc buttons" onclick="calcNum()" id="five">5</span>
+                <span class="calc buttons" onclick="calcNum()" id="six">6</span>
+                <span class="calc buttons" onclick="calcNum()" id="seven">7</span>
+                <span class="calc buttons" onclick="calcNum()" id="eight">8</span>
+                <span class="calc buttons" onclick="calcNum()" id="nine">9</span>
+                <span class="calc buttons" onclick="calcNum()" id="zero">0</span>
+                <span class="calc buttons" onclick="calcNum()" id="plus">+</span>
+                <span class="calc buttons" onclick="calcNum()" id="minus">-</span>
+                <span class="calc buttons" onclick="calcNum()" id="multiply">*</span>
+                <span class="calc buttons" onclick="calcNum()" id="divide">/</span>
+                <span class="calc buttons" onclick="calcNum()" id="equals">=</span>
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <input id="i" type="text" size="5">
+            <button type="submit" onclick="square(document.getElementById('i').value)">Do It!</button>
+            <br>
+            <span id="resultat"></span>
+        </div>
+    </section>
+    <footer>
+        &copy; Sean Rivis 2015
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

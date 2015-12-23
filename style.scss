@@ -1,0 +1,192 @@
+$offwhite: #efefef;
+$bgblue: #01A2D0;
+$bgwhite: #E6EEEE;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+.awesome {
+    background: $bgwhite;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    min-height: 96vh;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h1 {
+        font-size: 40px;
+    }
+    nav {
+    width: 60vw;
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            list-style: none;
+            flex: 1, 1, auto;
+            padding: 0;
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    // width: 80vw;
+    display: inline-flex;
+    flex: 1;
+
+}
+
+.maincontent {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    order: 2;
+    padding: 5px;
+    width: 80vw;
+    align-self: flex-start; // vertical alignment
+    justify-content: space-around;
+    form{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 200px;
+        width: 250px;
+        border: 1px solid black;
+        padding: 5px;
+        align-self: space-around; //horizontal alignment of form box
+        h3{
+            margin: 0;
+            padding: 5px;
+            text-align: center;
+        }
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+    .calculator{
+        display: flex;
+        flex-flow: row wrap;
+        width: 240px;
+        height: 350px;
+        border: 3px double black;
+        justify-content: space-between;
+        padding: 10px;
+        background: $bgblue;
+        font-family: Roboto Condensed;
+
+        .calc{
+            display: flex;
+            padding-left: 10px;
+            padding-right: 10px;
+            align-items: center;
+            border: 1px solid black;
+            flex: 0 0 auto;
+        }
+        .buttons{
+            display: flex;
+            flex-flow: row wrap;
+            order: 2;
+            justify-content: space-around;
+            align-self: center;
+            width: 50px;
+            height: 30px;
+            background: $offwhite;
+
+            // border: 1px solid red;
+            // height: 100px;
+            // width: 240px;
+        }
+
+        #display{
+        order: 1;
+        align-self: flex-start; //box pos
+        align-items: flex-start; //text vert pos
+        justify-content: flex-start; //text hor pos
+        flex-flow: row wrap;
+        flex: 4 4 auto;
+        width: 215px;
+        min-height: 150px;
+        word-break: break-all;
+        color: $offwhite;
+        background: #363535;
+        font-size: 2em;
+        // overflow: hidden;
+
+
+        }
+
+        #one {
+            order: 2;
+        }
+        #two {
+            order: 2;
+        }
+        #three {
+            order: 2;
+        }
+        #four {
+            order: 2;
+        }
+        #five {
+            order: 2;
+        }
+        #six {
+            order: 2;
+        }
+        #seven {
+            order: 2;
+        }
+        #eight {
+            order: 2;
+        }
+        #nine {
+            order: 2;
+        }
+        #zero {
+            order: 2;
+            // width: 134px;
+        }
+        #plus {
+            order: 3;
+        }
+        #minus {
+            order: 3;
+        }
+        #multiply {
+            order: 3;
+        }
+        #divide {
+            order: 3;
+        }
+        #equals {
+            order: 4;
+        }
+
+    }
+
+}
+
+.sidebar {
+    width: 20vw;
+    order: 1;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+footer {
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+}
