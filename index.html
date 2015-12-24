@@ -6,19 +6,41 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 </head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <body>
     <header>
-        <h1>Sean's jQuery Test Page</h1>
+        <h1>Calculator!!</h1>
         <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Type</a></li>
+            <li><a href="#">Calculate</a></li>
+            <li><a href="#">Mathersize</a></li>
         </ul>
         </nav>
     </header>
     <section class="content">
         <div class="maincontent">
+
+            <div class="calculator">
+                <span class="calc" id="display"></span>
+                <span class="calc buttons" id="clear">clear</span>
+                <span class="calc buttons"  id="1">1</span>
+                <span class="calc buttons"  id="2">2</span>
+                <span class="calc buttons"  id="3">3</span>
+                <span class="calc buttons"  id="times">x</span>
+                <span class="calc buttons"  id="4">4</span>
+                <span class="calc buttons"  id="5">5</span>
+                <span class="calc buttons"  id="6">6</span>
+                <span class="calc buttons"  id="divide">÷</span>
+                <span class="calc buttons"  id="7">7</span>
+                <span class="calc buttons"  id="8">8</span>
+                <span class="calc buttons"  id="9">9</span>
+                <span class="calc buttons"  id="plus">+</span>
+                <span class="calc buttons"  id="0">0</span>
+                <span class="calc buttons"  id="dot">.</span>
+                <span class="calc buttons"  id="equals">=</span>
+                <span class="calc buttons"  id="minus">-</span>
+            </div>
             <h1>Timer</h1>
             <div class="clock">
             <h1 id="nums">00:00</h1>
@@ -32,26 +54,6 @@
                 </span>
             </form>
             <p>
-            <div class="calculator">
-                <span class="calc" id="display">0</span>
-
-                <span class="calc buttons" onclick="calcNum()" id="one">1</span>
-                <span class="calc buttons" onclick="calcNum()" id="two">2</span>
-                <span class="calc buttons" onclick="calcNum()" id="three">3</span>
-                <span class="calc buttons" onclick="calcNum()" id="four">4</span>
-                <span class="calc buttons" onclick="calcNum()" id="five">5</span>
-                <span class="calc buttons" onclick="calcNum()" id="six">6</span>
-                <span class="calc buttons" onclick="calcNum()" id="seven">7</span>
-                <span class="calc buttons" onclick="calcNum()" id="eight">8</span>
-                <span class="calc buttons" onclick="calcNum()" id="nine">9</span>
-                <span class="calc buttons" onclick="calcNum()" id="zero">0</span>
-                <span class="calc buttons" onclick="calcNum()" id="plus">+</span>
-                <span class="calc buttons" onclick="calcNum()" id="minus">-</span>
-                <span class="calc buttons" onclick="calcNum()" id="multiply">*</span>
-                <span class="calc buttons" onclick="calcNum()" id="divide">/</span>
-                <span class="calc buttons" onclick="calcNum()" id="equals">=</span>
-
-            </div>
         </div>
         <div class="sidebar">
             <input id="i" type="text" size="5">
